@@ -15,6 +15,7 @@ namespace Calculadora
         double primero;
         double segundo;
         string operador;
+
         public Calculadora()
         {
             InitializeComponent();

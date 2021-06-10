@@ -107,5 +107,9 @@ namespace Calculadora
                 tbxPantalla.Text = tbxPantalla.Text.Substring(0, tbxPantalla.Text.Length - 1);
         }
 
+        private void Calculadora_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

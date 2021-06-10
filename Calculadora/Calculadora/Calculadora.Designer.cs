@@ -300,6 +300,7 @@ namespace Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(222, 308);
             this.Controls.Add(this.tbxPantalla);
@@ -321,9 +322,11 @@ namespace Calculadora
             this.Controls.Add(this.btnMultiplica);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.btnSuma);
+            this.MaximizeBox = false;
             this.Name = "Calculadora";
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Calculadora_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

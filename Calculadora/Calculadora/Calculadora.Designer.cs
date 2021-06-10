@@ -322,6 +322,7 @@ namespace Calculadora
             this.Controls.Add(this.btnMultiplica);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.btnSuma);
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Calculadora";
             this.Text = "Calculadora";

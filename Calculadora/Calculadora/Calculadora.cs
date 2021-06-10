@@ -46,7 +46,7 @@ namespace Calculadora
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnSuma_Click(object sender, EventArgs e)
@@ -109,7 +109,59 @@ namespace Calculadora
 
         private void Calculadora_KeyPress(object sender, KeyPressEventArgs e)
         {
+            switch (e.KeyChar.ToString())
+            {
+                case "0":
+                    btnN0.PerformClick();
+                    break;
+                case "1":
+                    btnN1.PerformClick();
+                    break;
+                case "2":
+                    btnN2.PerformClick();
+                    break;
+                case "3":
+                    btnN3.PerformClick();
+                    break;
+                case "4":
+                    btnN4.PerformClick();
+                    break;
+                case "5":
+                    btnN5.PerformClick();
+                    break;
+                case "6":
+                    btnN6.PerformClick();
+                    break;
+                case "7":
+                    btnN7.PerformClick();
+                    break;
+                case "8":
+                    btnN8.PerformClick();
+                    break;
+                case "9":
+                    btnN9.PerformClick();
+                    break;
+                case "+":
+                    btnSuma.PerformClick();
+                    break;
+                case "-":
+                    btnResta.PerformClick();
+                    break;
+                case "*":
+                    btnMultiplica.PerformClick();
+                    break;
+                case "/":
+                    btnDivide.PerformClick();
+                    break;
 
+                default:
+                    break;
+            }
+
+            if (e.KeyChar ==Convert.ToChar( Keys.Enter))
+            {
+                btnIgual.PerformClick();
+            }
         }
     }
 }

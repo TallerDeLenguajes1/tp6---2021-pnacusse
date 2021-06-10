@@ -38,59 +38,10 @@ namespace Calculadora
             tbxPantalla.Clear();
         }
 
-        private void btnN1_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
-            tbxPantalla.Text = tbxPantalla.Text + "1";
-        }
-
-        private void btnN2_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "2";
-        }
-
-        private void btnN3_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "3";
-        }
-
-        private void btnN0_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "0";
-        }
-
-        private void btnPunto_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + ",";
-        }
-
-        private void btnN4_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "4";
-        }
-
-        private void btnN5_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "5";
-        }
-
-        private void btnN6_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "6";
-        }
-
-        private void btnN7_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "7";
-        }
-
-        private void btnN8_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "8";
-        }
-
-        private void btnN9_Click(object sender, EventArgs e)
-        {
-            tbxPantalla.Text = tbxPantalla.Text + "9";
+            Button b = (Button)sender;
+            tbxPantalla.Text = tbxPantalla.Text + b.Text;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -155,5 +106,6 @@ namespace Calculadora
             else
                 tbxPantalla.Text = tbxPantalla.Text.Substring(0, tbxPantalla.Text.Length - 1);
         }
+
     }
 }

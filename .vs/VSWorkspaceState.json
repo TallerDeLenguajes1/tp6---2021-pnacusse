@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Calculadora",
-    "\\Calculadora\\Calculadora"
+    "\\Calculadora\\Calculadora",
+    "\\Calculadora\\Calculadora\\Clases"
   ],
-  "SelectedNode": "\\Calculadora\\Calculadora\\Calculadora.cs",
+  "SelectedNode": "\\Calculadora\\Calculadora\\Clases\\ClsDivision.cs",
   "PreviewInSolutionExplorer": false
 }
